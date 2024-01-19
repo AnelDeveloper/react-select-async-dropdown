@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "d50671d4-2870-43ce-b756-a5934135bafb",
+		"name": "Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11520066",
+		"_collection_link": "https://www.postman.com/crimson-star-189557/workspace/monetizead-medior-task/collection/11520066-d50671d4-2870-43ce-b756-a5934135bafb?action=share&source=collection_link&creator=11520066"
+	},
+	"item": [
+		{
+			"name": "Get items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/items",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"items"
+					],
+					"query": [
+						{
+							"key": "cursor",
+							"value": "0",
+							"description": "Default 0, must be integet,  must be >= 0",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"description": "Default 10, must be integet,  must be > 0",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
